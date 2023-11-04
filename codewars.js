@@ -75,3 +75,16 @@ function basicOp2(operation, value1, value2) {
     }
 }
 console.log(basicOp2('n', 4, 7));
+
+
+function isIsogram(str){
+    str = str.toLowerCase();
+    for (let i=0; i<str.length-1; i++) {
+        for(let j=i+1; j<str.length; j++) {
+            if(str[i]===str[j]) return false
+        }
+    }
+    return true
+}
+
+console.log(isIsogram(''));
