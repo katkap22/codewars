@@ -31,3 +31,20 @@ function findSmallestInt3(arr) {
     return Math.min(...arr);
 }
 console.log(findSmallestInt3(a));
+
+//Удаление первого и последнего символа из строки
+let str = 'country Russia';
+
+// 1 - возвращаем часть строки между указанными индексами, с помощью substring()
+function removeChar(str){
+    return str.substring(1, str.length -1);
+}
+console.log(removeChar(str));
+
+/*2 - c помощью slice(indexStart, indexEnd) - извлекает текст из строки и возвращает новую строку
+indexStart - индекс первого символа, включаемого в возвращаемую подстроку.
+indexEnd (необязательный) - индекс первого символа, исключаемого из возвращаемой подстроки.*/
+function removeChar2(str){
+    return str.slice(1, -1);
+}
+console.log(removeChar(str));
